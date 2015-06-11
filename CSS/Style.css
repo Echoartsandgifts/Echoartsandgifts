@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+body {
+      line-height: 1;
+}
+ol, ul {
+      list-style: none;
+}
+blockquote, q {
+      quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+      content: '';
+      content: none;
+}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+body { 
+      background-image: url('http://i.imgur.com/QbA5OHP.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+}
+input, button{
+      float:right;
+}
+ul{
+      width: 130px;
+}
+li{
+      list-style-type: none;
+      padding: 5px;
+      border: 1px solid #333; /* border around the li */
+      color: #FF0000; /* color of the text */
+
+}
+h3{
+      display: inline-block;
+      width: 10%;
+}
+#Nav{
+      width: 90%;
+      float: right;
+      padding: 0;
+      display: inline-block;
+}
+#Nav li{
+      float: left;
+      display: inline-block;
+      height: 21px;
+
+}
+#banner, .circle {
+
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+}
+/*beginning of carousel*/
+div#carousel { 
+  perspective: 1200px; 
+  width: 45%;
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+/*end of carousel*/
