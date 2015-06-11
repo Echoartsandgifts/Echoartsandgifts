@@ -51,26 +51,23 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center; 
+     
 }
 input, button{
       float:right;
 }
-ul{
-      width: 130px;
-}
-li{
-      list-style-type: none;
-      padding: 5px;
-      border: 1px solid #333; /* border around the li */
-      color: #FF0000; /* color of the text */
+     
 
-}
 h3{
       display: inline-block;
       width: 10%;
 }
+a{
+  color: red;
+}
 #Nav{
       width: 90%;
+      margin-bottom: 15px;
       float: right;
       padding: 0;
       display: inline-block;
@@ -79,7 +76,43 @@ h3{
       float: left;
       display: inline-block;
       height: 21px;
+      list-style-type: none;
+      padding: 5px;
+      border: 1px solid #333; /* border around the li */
+      color: #FF0000; /* color of the text */
+}
+#sidebar {
+       width: 15%;
+       margin-right: 5%;
+       float: left;
 
+}
+#sidebar li{
+      list-style-type: none;
+      padding: 5px;
+      border: 1px solid #333; /* border around the li */
+      color: #FF0000; /* color of the text */
+}
+#container{
+  width: 80%;
+  float: left;
+}
+.product{
+  width: 23%;
+  margin: 5%;
+  float: left;
+   background-color: #C0C0C0;/*silver*/
+
+}
+.product img{
+  width: 100%;
+
+}
+.product p{
+  font-size: 2em;
+  color: #800080;/*purple*/
+  text-align: center;
+  
 }
 #banner, .circle {
 
@@ -90,7 +123,7 @@ h3{
 /*beginning of carousel*/
 div#carousel { 
   perspective: 1200px; 
-  width: 45%;
+  width: 96%;
   padding-top: 10%; 
   font-size:0; 
   margin-bottom: 3rem; 
@@ -129,4 +162,14 @@ div#carousel ~ span {
   border-bottom: none; 
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
 /*end of carousel*/
+
+header, #main{
+  max-width: 1200px;
+  width: 960px;
+  margin: 0 auto;
+
+
+}
